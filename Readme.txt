@@ -22,7 +22,7 @@ Steps:
     - container name: studentsurvey
     - replicas: 3
     - container image: moufaso/studentsurvey645hw3:0.3
-    - Node port: hw3nodeport 30966
+    - Node port: 30966
 10. Created hw3-pipline in Jenkins
     - Poll SCM: * * * * *
     - Pipline script from SCM: git
