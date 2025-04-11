@@ -30,7 +30,7 @@ pipeline {
       stage('Deployment to rancher') {
          steps {
             script {
-               sh 'kubectl --namespace student-survey set image deployment/hw2-deployment studentsurvey=moufaso/studentsurvey645hw3:0.${BUILD_ID}'
+               sh 'kubectl --namespace student-survey set image deployment/hw3-deployment studentsurvey=moufaso/studentsurvey645hw3:0.${BUILD_ID}'
             }
          }
       }
